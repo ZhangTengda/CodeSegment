@@ -30,11 +30,11 @@ public class ListViewActivity extends AppCompatActivity {
                     public void run() {
                         loadMore();
                     }
-                },3000);
+                },1500);
             }
         });
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 16; i++) {
             Person person = new Person();
             person.setName("张小鱼" + i);
             person.setAge(20 + i);
@@ -46,10 +46,10 @@ public class ListViewActivity extends AppCompatActivity {
     }
 
     private void loadMore() {
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 5; i++) {
             Person person = new Person();
             person.setName("张小鱼 新增" + i);
-            person.setAge(20 + i);
+            person.setAge(111111 + i);
             list.add(person);
         }
         listview.setLoadCompleted();

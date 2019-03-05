@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.testone.demo.ele.StartSearchActivity;
 import com.testone.demo.guodu.GuoDuActivity;
+import com.testone.demo.seekbar.SeekBarKtActivity;
 import com.testone.demo.share.ShareOneActivity;
 import com.testone.myapplication.R;
 import com.testone.demo.keyboard.KeybardActivity;
@@ -89,6 +90,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, KeybardActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test9).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SeekBarKtActivity.class);
                 startActivity(intent);
             }
         });

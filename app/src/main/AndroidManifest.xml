@@ -68,6 +68,8 @@
             android:name="com.testone.demo.keyboard.KeybardActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
+        <activity android:name="com.testone.demo.seekbar.SeekBarKtActivity" />
+
 
     </application>
 

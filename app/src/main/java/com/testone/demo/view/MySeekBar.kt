@@ -112,13 +112,13 @@ class MySeekBar : View {
 //        canvas!!.drawRect(Rect(), bgPaint)
 
         //绘制左边的拖拽按钮
-        canvas!!.drawRect(leftRect, buttonPaint)
+        canvas.drawRect(leftRect, buttonPaint)
 //        drawLeftRect(canvas)
         //绘制当前的进度条
-        canvas!!.drawRect(progressRect, progressPaint)
+        canvas.drawRect(progressRect, progressPaint)
 //        drawProgressRect(canvas)
         //绘制右边的拖拽按钮
-        canvas!!.drawRect(rightRect, buttonPaint)
+        canvas.drawRect(rightRect, buttonPaint)
 //        drawRightRect(canvas)
         isFirstInit=false
     }
@@ -179,8 +179,8 @@ class MySeekBar : View {
             return false
         when (event!!.action) {
             MotionEvent.ACTION_DOWN -> {//手指按下
-                downX = event!!.x
-                downY = event!!.y
+                downX = event.x
+                downY = event.y
                 Log.i("MySeekBar","手指按下-----::${downX}--${downY}")
                 if (viewContainsPoint(leftRect,downX,downY)){
                     SEEKMODE=LEFTMODE

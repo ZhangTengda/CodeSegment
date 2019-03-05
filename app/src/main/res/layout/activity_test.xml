@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="跳转9"
+            android:text="跳转SeekBar"
             android:textSize="20dp" />
 
         <TextView
