@@ -1,4 +1,4 @@
-package com.testone.demo.ele;
+package com.testone.demo.activity.ele;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.testone.myapplication.R;
+import com.testone.demo.R;
 
 public class SearchContentActivity extends Activity {
     private TextView mSearchBGTxt;

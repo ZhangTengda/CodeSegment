@@ -1,13 +1,13 @@
-package com.testone.demo.listview;
+package com.testone.demo.activity.listview;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.testone.demo.R;
 import com.testone.demo.adapter.ListViewAdapter;
 import com.testone.demo.view.LoadMoreListView;
-import com.testone.myapplication.R;
 
 import java.util.ArrayList;
 import java.util.List;

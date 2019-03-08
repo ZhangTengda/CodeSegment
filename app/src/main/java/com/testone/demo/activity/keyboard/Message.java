@@ -1,4 +1,4 @@
-package com.testone.demo.keyboard;
+package com.testone.demo.activity.keyboard;
 
 public class Message {
 

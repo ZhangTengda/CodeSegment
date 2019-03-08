@@ -1,4 +1,4 @@
-package com.testone.demo
+package com.testone.demo.activity
 
 import android.support.v7.app.AppCompatActivity
 

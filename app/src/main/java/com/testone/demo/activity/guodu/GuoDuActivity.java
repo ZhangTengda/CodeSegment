@@ -1,11 +1,11 @@
-package com.testone.demo.guodu;
+package com.testone.demo.activity.guodu;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.testone.myapplication.R;
+import com.testone.demo.R;
 
 public class GuoDuActivity extends AppCompatActivity {
 
@@ -19,7 +19,7 @@ public class GuoDuActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(GuoDuActivity.this, Transitions.class);
                 startActivity(intent);
-                overridePendingTransition(R.anim.fade_out,R.anim.fade_in);
+                overridePendingTransition(R.anim.fade_out, R.anim.fade_in);
             }
         });
     }

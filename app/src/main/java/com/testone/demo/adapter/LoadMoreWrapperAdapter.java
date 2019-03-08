@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.testone.myapplication.R;
+import com.testone.demo.R;
 
 import java.util.List;
 

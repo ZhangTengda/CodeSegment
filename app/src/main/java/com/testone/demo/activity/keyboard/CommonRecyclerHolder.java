@@ -1,4 +1,4 @@
-package com.testone.demo.keyboard;
+package com.testone.demo.activity.keyboard;
 
 import android.graphics.Bitmap;
 import android.support.annotation.DrawableRes;

@@ -1,4 +1,4 @@
-package com.testone.demo.share;
+package com.testone.demo.activity.share;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.testone.myapplication.R;
+import com.testone.demo.R;
 
 public class ShareTwoActivity extends AppCompatActivity {
 

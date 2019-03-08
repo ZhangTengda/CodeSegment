@@ -1,4 +1,4 @@
-package com.testone.demo.keyboard;
+package com.testone.demo.activity.keyboard;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.testone.myapplication.R;
+import com.testone.demo.R;
 
 import java.util.ArrayList;
 import java.util.List;

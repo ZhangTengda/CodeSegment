@@ -1,4 +1,4 @@
-package com.testone.demo.listview;
+package com.testone.demo.activity.listview;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,9 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.testone.demo.R;
 import com.testone.demo.adapter.LoadMoreWrapperAdapter;
 import com.testone.demo.wrapper.LoadMoreWrapper;
-import com.testone.myapplication.R;
 import com.testone.demo.listener.EndlessRecyclerOnScrollListener;
 
 import java.util.ArrayList;

@@ -1,7 +1,6 @@
-package com.testone.demo;
+package com.testone.demo.activity;
 
 import android.app.Activity;
-import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
@@ -14,20 +13,21 @@ import android.text.style.CharacterStyle;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.StyleSpan;
 import android.util.Log;
-import android.util.SparseArray;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.testone.myapplication.R;
-
-import org.w3c.dom.Text;
+import com.testone.demo.R;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ *
+ *
+ */
 public class EditTextActivity extends Activity {
 
     private EditText editText;
@@ -59,8 +59,6 @@ public class EditTextActivity extends Activity {
 //        String s = "测试部门门测";
 //        textView.setText(makeKeywordHighlight(this, s, "测试"));
 //        textView.setText(matcherSearchContent( s, "测门"));
-
-
 
 
 //        String str = "你好，安卓-》Hello,Android!";
@@ -111,10 +109,10 @@ public class EditTextActivity extends Activity {
 //    }
 
 
-    public static SpannableStringBuilder matcherSearchContent(String text,String keyword){
+    public static SpannableStringBuilder matcherSearchContent(String text, String keyword) {
         String[] split = keyword.split("");
         int index = 0;
-        SpannableStringBuilder spannable=new SpannableStringBuilder(text);
+        SpannableStringBuilder spannable = new SpannableStringBuilder(text);
         CharacterStyle span;
         for (String aSplit : split) {
 //            String wordReg = "(?i)" + aSplit;   //忽略字母大小写
@@ -124,9 +122,9 @@ public class EditTextActivity extends Activity {
                 if (matcher.start() != matcher.end()) {
                     int i = text.indexOf(aSplit, index);
                     index = i;
-                    Log.i("1111111111111","位置i="+i);
+                    Log.i("1111111111111", "位置i=" + i);
                     span = new ForegroundColorSpan(Color.parseColor("#ff5656"));
-                    spannable.setSpan(CharacterStyle.wrap(span),i, i+1, Spannable.SPAN_MARK_MARK);
+                    spannable.setSpan(CharacterStyle.wrap(span), i, i + 1, Spannable.SPAN_MARK_MARK);
                 }
             }
         }
@@ -135,6 +133,7 @@ public class EditTextActivity extends Activity {
 
     /**
      * 通讯录搜索部门专用高亮函数
+     *
      * @param src
      * @param keyword
      * @return

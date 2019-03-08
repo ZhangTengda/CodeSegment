@@ -1,9 +1,9 @@
-package com.testone.demo.keyboard;
+package com.testone.demo.activity.keyboard;
 
 import android.content.Context;
 import android.support.annotation.LayoutRes;
 
-import com.testone.myapplication.R;
+import com.testone.demo.R;
 
 import java.util.List;
 

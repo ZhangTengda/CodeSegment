@@ -1,4 +1,4 @@
-package com.testone.demo;
+package com.testone.demo.activity;
 
 import android.animation.ValueAnimator;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.testone.myapplication.R;
+import com.testone.demo.R;
 
 public class TestActivity extends AppCompatActivity {
     private TextView suofangView;

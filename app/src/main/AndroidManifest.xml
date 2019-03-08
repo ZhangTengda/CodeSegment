@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.testone.myapplication">
+    package="com.testone.demo">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.testone.demo.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,56 +22,57 @@
 
 
         <activity
-            android:name="com.testone.demo.TestActivity"
+            android:name=".activity.TestActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
         <activity
-            android:name="com.testone.demo.guodu.GuoDuActivity"
+            android:name=".activity.guodu.GuoDuActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
         <activity
-            android:name="com.testone.demo.guodu.Transitions"
+            android:name=".activity.guodu.Transitions"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
 
         <activity
-            android:name="com.testone.demo.ele.StartSearchActivity"
+            android:name=".activity.ele.StartSearchActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
         <activity
-            android:name="com.testone.demo.ele.SearchContentActivity"
+            android:name=".activity.ele.SearchContentActivity"
             android:theme="@style/Theme.Transparent"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
         <activity
-            android:name="com.testone.demo.share.ShareOneActivity"
+            android:name=".activity.share.ShareOneActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
         <activity
-            android:name="com.testone.demo.share.ShareTwoActivity"
+            android:name=".activity.share.ShareTwoActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
         <activity
-            android:name="com.testone.demo.EditTextActivity"
+            android:name=".activity.EditTextActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
         <activity
-            android:name="com.testone.demo.listview.ListViewActivity"
+            android:name=".activity.listview.ListViewActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
         <activity
-            android:name="com.testone.demo.listview.RecyclerViewActivity"
+            android:name=".activity.listview.RecyclerViewActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
         <activity
-            android:name="com.testone.demo.listview.LoadMoreWrapperActivity"
+            android:name=".activity.listview.LoadMoreWrapperActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
 
         <activity
-            android:name="com.testone.demo.keyboard.KeybardActivity"
+            android:name=".activity.keyboard.KeybardActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
-        <activity android:name="com.testone.demo.seekbar.SeekBarKtActivity" />
+        <activity android:name=".activity.seekbar.SeekBarKtActivity" />
+        <activity android:name=".activity.TestUrlRequestActivity" />
 
 
     </application>

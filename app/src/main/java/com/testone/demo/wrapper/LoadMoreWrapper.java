@@ -9,7 +9,8 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.testone.myapplication.R;
+import com.testone.demo.R;
+
 
 public class LoadMoreWrapper extends RecyclerView.Adapter {
     private RecyclerView.Adapter adapter;

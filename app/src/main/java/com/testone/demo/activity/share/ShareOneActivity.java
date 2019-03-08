@@ -1,4 +1,4 @@
-package com.testone.demo.share;
+package com.testone.demo.activity.share;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.testone.myapplication.R;
+import com.testone.demo.R;
 
 public class ShareOneActivity extends AppCompatActivity {
 
@@ -25,7 +25,6 @@ public class ShareOneActivity extends AppCompatActivity {
             }
         });
     }
-
 
 
     private void click(View v) {

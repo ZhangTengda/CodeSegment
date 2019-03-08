@@ -1,4 +1,4 @@
-package com.testone.demo.ele;
+package com.testone.demo.activity.ele;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.testone.myapplication.R;
+import com.testone.demo.R;
 
 public class StartSearchActivity extends Activity {
     private TextView mSearchBGTxt;

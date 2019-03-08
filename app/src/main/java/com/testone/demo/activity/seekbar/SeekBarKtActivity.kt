@@ -1,9 +1,9 @@
-package com.testone.demo.seekbar
+package com.testone.demo.activity.seekbar
 
 import android.os.Bundle
-import com.testone.demo.BaseActivity
+import com.testone.demo.R
+import com.testone.demo.activity.BaseActivity
 import com.testone.demo.view.MySeekBar
-import com.testone.myapplication.R
 
 class SeekBarKtActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ListView;
 
-import com.testone.myapplication.R;
+import com.testone.demo.R;
 
 public class LoadMoreListView extends ListView implements AbsListView.OnScrollListener {
 

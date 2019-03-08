@@ -1,10 +1,10 @@
-package com.testone.demo.guodu;
+package com.testone.demo.activity.guodu;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 
-import com.testone.myapplication.R;
+import com.testone.demo.R;
 
 public class Transitions extends AppCompatActivity {
 
@@ -19,6 +19,6 @@ public class Transitions extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         finish();
-        overridePendingTransition(R.anim.fade_out,R.anim.fade_in);
+        overridePendingTransition(R.anim.fade_out, R.anim.fade_in);
     }
 }

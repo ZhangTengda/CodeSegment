@@ -7,8 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.testone.myapplication.R;
-import com.testone.demo.listview.ListViewActivity;
+import com.testone.demo.R;
+import com.testone.demo.activity.listview.ListViewActivity;
 
 import java.util.List;
 

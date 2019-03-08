@@ -6,15 +6,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.testone.demo.ele.StartSearchActivity;
-import com.testone.demo.guodu.GuoDuActivity;
-import com.testone.demo.seekbar.SeekBarKtActivity;
-import com.testone.demo.share.ShareOneActivity;
-import com.testone.myapplication.R;
-import com.testone.demo.keyboard.KeybardActivity;
-import com.testone.demo.listview.ListViewActivity;
-import com.testone.demo.listview.LoadMoreWrapperActivity;
-import com.testone.demo.listview.RecyclerViewActivity;
+import com.testone.demo.activity.EditTextActivity;
+import com.testone.demo.activity.TestActivity;
+import com.testone.demo.activity.TestUrlRequestActivity;
+import com.testone.demo.activity.ele.StartSearchActivity;
+import com.testone.demo.activity.guodu.GuoDuActivity;
+import com.testone.demo.activity.seekbar.SeekBarKtActivity;
+import com.testone.demo.activity.share.ShareOneActivity;
+import com.testone.demo.activity.keyboard.KeybardActivity;
+import com.testone.demo.activity.listview.ListViewActivity;
+import com.testone.demo.activity.listview.LoadMoreWrapperActivity;
+import com.testone.demo.activity.listview.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -98,6 +100,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SeekBarKtActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test10).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, TestUrlRequestActivity.class);
                 startActivity(intent);
             }
         });
