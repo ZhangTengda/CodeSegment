@@ -17,6 +17,7 @@ import com.testone.demo.activity.keyboard.KeybardActivity;
 import com.testone.demo.activity.listview.ListViewActivity;
 import com.testone.demo.activity.listview.LoadMoreWrapperActivity;
 import com.testone.demo.activity.listview.RecyclerViewActivity;
+import com.testone.demo.database.DataBaseActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -108,6 +109,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, TestUrlRequestActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test11).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DataBaseActivity.class);
                 startActivity(intent);
             }
         });

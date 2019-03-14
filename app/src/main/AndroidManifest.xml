@@ -73,6 +73,7 @@
 
         <activity android:name=".activity.seekbar.SeekBarKtActivity" />
         <activity android:name=".activity.TestUrlRequestActivity" />
+        <activity android:name=".database.DataBaseActivity" />
 
 
     </application>

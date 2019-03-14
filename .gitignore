@@ -5,3 +5,5 @@
 .gradle
 .idea
 .idea/codeStyles/Project.xml
+app/app.iml
+*.iml
