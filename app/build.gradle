@@ -60,6 +60,8 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1' //非必要依赖， log依赖，如果需要打印OkHttpLog需要添加
     // guolin 的数据库开源库
     implementation 'org.litepal.android:core:2.0.0'
+    // 富文本编译器
+    implementation 'jp.wasabeef:richeditor-android:1.2.2'
 }
 repositories {
     mavenCentral()

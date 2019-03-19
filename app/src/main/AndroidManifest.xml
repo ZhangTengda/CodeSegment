@@ -75,6 +75,7 @@
         <activity android:name=".activity.TestUrlRequestActivity" />
         <activity android:name=".activity.database.DataBaseActivity" />
         <activity android:name=".activity.filepicker.FilePickerActivity" />
+        <activity android:name=".activity.richtext.RichTextActivity" />
 
 
     </application>
