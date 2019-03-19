@@ -76,6 +76,7 @@
         <activity android:name=".activity.database.DataBaseActivity" />
         <activity android:name=".activity.filepicker.FilePickerActivity" />
         <activity android:name=".activity.richtext.RichTextActivity" />
+        <activity android:name=".activity.richtext.RichText2Activity" />
 
 
     </application>
