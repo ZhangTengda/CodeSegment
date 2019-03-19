@@ -1,4 +1,4 @@
-package com.testone.demo.database;
+package com.testone.demo.activity.database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

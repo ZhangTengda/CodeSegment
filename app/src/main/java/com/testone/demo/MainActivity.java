@@ -10,6 +10,7 @@ import com.testone.demo.activity.EditTextActivity;
 import com.testone.demo.activity.TestActivity;
 import com.testone.demo.activity.TestUrlRequestActivity;
 import com.testone.demo.activity.ele.StartSearchActivity;
+import com.testone.demo.activity.filepicker.FilePickerActivity;
 import com.testone.demo.activity.guodu.GuoDuActivity;
 import com.testone.demo.activity.seekbar.SeekBarKtActivity;
 import com.testone.demo.activity.share.ShareOneActivity;
@@ -17,7 +18,7 @@ import com.testone.demo.activity.keyboard.KeybardActivity;
 import com.testone.demo.activity.listview.ListViewActivity;
 import com.testone.demo.activity.listview.LoadMoreWrapperActivity;
 import com.testone.demo.activity.listview.RecyclerViewActivity;
-import com.testone.demo.database.DataBaseActivity;
+import com.testone.demo.activity.database.DataBaseActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -121,7 +122,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        findViewById(R.id.test11).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, FilePickerActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

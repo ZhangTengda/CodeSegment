@@ -73,7 +73,8 @@
 
         <activity android:name=".activity.seekbar.SeekBarKtActivity" />
         <activity android:name=".activity.TestUrlRequestActivity" />
-        <activity android:name=".database.DataBaseActivity" />
+        <activity android:name=".activity.database.DataBaseActivity" />
+        <activity android:name=".activity.filepicker.FilePickerActivity" />
 
 
     </application>
