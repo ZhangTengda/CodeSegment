@@ -12,6 +12,7 @@ import com.testone.demo.activity.TestUrlRequestActivity;
 import com.testone.demo.activity.ele.StartSearchActivity;
 import com.testone.demo.activity.filepicker.FilePickerActivity;
 import com.testone.demo.activity.guodu.GuoDuActivity;
+import com.testone.demo.activity.richtext.RichText3Activity;
 import com.testone.demo.activity.richtext.RichTextActivity;
 import com.testone.demo.activity.seekbar.SeekBarKtActivity;
 import com.testone.demo.activity.share.ShareOneActivity;
@@ -135,6 +136,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, RichTextActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test14).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RichText3Activity.class);
                 startActivity(intent);
             }
         });

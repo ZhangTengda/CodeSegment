@@ -6,7 +6,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.testone.myapplication"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -67,6 +67,8 @@ dependencies {
         exclude group: 'com.android.support'
         exclude group: 'com.github.bumptech.glide'
     }
+
+    implementation 'com.github.mr5:icarus:0.1.14'
 }
 repositories {
     mavenCentral()
