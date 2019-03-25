@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <!--    输入6位密码  -->
+    <LinearLayout
+        android:id="@+id/loginname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/login_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入6位的登录名"
+            android:paddingLeft="0dp"
+            android:textSize="19dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_loginname_plaintext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <ImageView
+                android:id="@+id/iv_plainttext_loginname"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mx_password_see_selector"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--    确认密码  -->
+    <LinearLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginname"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/login_pwd_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="0dp"
+            android:textSize="19dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_password_plaintext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <ImageView
+                android:id="@+id/iv_plainttext_password"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mx_password_see_selector"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/verification_code_bg_selector"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="登录"
+        android:textSize="16dp" />
+
+</RelativeLayout>

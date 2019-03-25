@@ -84,10 +84,13 @@
         <activity android:name=".activity.richtext.RichText2Activity" />
         <activity android:name=".activity.richtext.RichText3Activity" />
         <activity android:name=".activity.mqtt.MQTTActivity" />
+        <activity android:name=".activity.mqtt.ChatBoxesActivity" />
+        <activity android:name=".activity.mqtt.LoginChatBoxActivity" />
 
         <!-- Mqtt服务 -->
         <service android:name="org.eclipse.paho.android.service.MqttService" />
         <service android:name=".service.MQTTService" />
+        <service android:name=".chatboxservice.ChatBoxMQTTService" />
 
     </application>
 

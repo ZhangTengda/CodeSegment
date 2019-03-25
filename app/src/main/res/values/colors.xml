@@ -6,4 +6,14 @@
     <color name="black">#000000</color>
     <color name="red">#0000ff</color>
     <color name="dark_gray">#949494</color>
+    <color name="white">#ffffff</color>
+
+    <color name="mx_gray_280">#A1A5AD</color>
+    <color name="mx_gray_300">#999999</color>
+    <color name="mx_blue_001">#56c2ff</color>
+    <color name="mx_unselected_gray">#E6F6FF</color>
+    <color name="mx_state_pressed_blue">#459BCD</color>
+    <color name="mx_vip_contact_view_more_color">#56C2FF</color>
+
+
 </resources>
