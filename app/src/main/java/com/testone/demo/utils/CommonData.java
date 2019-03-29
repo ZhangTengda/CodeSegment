@@ -2,6 +2,15 @@ package com.testone.demo.utils;
 
 public class CommonData {
 
+    public static final String HTTP_HOST= "http://219.237.75.67:880";
+    public static final String PUSH_HOST= "ssl://219.237.75.67:1885";
+    public static final String CLIENT_VPN_SERVER_HOST= "219.237.75.67:2990";
+
+    //登录接口
+    public static final String OAUTH2= "/oauth2/token";
+    //  获取departments
+    public static final String CONTACT_LIST= "/api/v1/departments";
+
     public String htmlString = "<html><head><meta content=\"text/html; charset=utf-8\" http-equiv=\"Content-Type\"></head><div style='font-size:10.0pt;font-family:\"Tahoma\",\"sans-serif\";padding:3.0pt 0in 0in 0in'>\n" +
             "    <hr style='border:none;border-top:solid #E1E1E1 1.0pt'>\n" +
             "    <b>发件人：</b> &quot;张腾达&quot;&lt;zhangtengda0315@163.com&gt;<br>\n" +

@@ -20,6 +20,7 @@ public class HttpUtils {
      */
     public static String paramsTransform(HashMap<String, String> paramsMap) {
         StringBuilder tempParams = new StringBuilder();
+        tempParams.append("?");
         try {
             int pos = 0;
             for (String key : paramsMap.keySet()) {

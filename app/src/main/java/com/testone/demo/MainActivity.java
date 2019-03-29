@@ -14,6 +14,7 @@ import com.testone.demo.activity.filepicker.FilePickerActivity;
 import com.testone.demo.activity.guodu.GuoDuActivity;
 import com.testone.demo.activity.mqtt.LoginChatBoxActivity;
 import com.testone.demo.activity.mqtt.MQTTActivity;
+import com.testone.demo.activity.okuse.OkHttpActivity;
 import com.testone.demo.activity.richtext.RichText3Activity;
 import com.testone.demo.activity.richtext.RichTextActivity;
 import com.testone.demo.activity.seekbar.SeekBarKtActivity;
@@ -162,6 +163,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, LoginChatBoxActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test17).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, OkHttpActivity.class);
                 startActivity(intent);
             }
         });
