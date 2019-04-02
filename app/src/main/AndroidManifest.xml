@@ -87,6 +87,8 @@
         <activity android:name=".activity.mqtt.ChatBoxesActivity" />
         <activity android:name=".activity.mqtt.LoginChatBoxActivity" />
         <activity android:name=".activity.okuse.OkHttpActivity" />
+        <activity android:name=".activity.calendar.CalendarActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
         <!-- Mqtt服务 -->
         <service android:name="org.eclipse.paho.android.service.MqttService" />

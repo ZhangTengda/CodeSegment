@@ -5,6 +5,8 @@ import android.content.res.Configuration;
 
 import com.testone.demo.chatboxservice.MqttAppState;
 
+import org.litepal.LitePal;
+
 public class MyApplication extends Application {
 
     private static MyApplication instance = null;
@@ -12,6 +14,7 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        LitePal.initialize(this);
         instance = this;
         MqttAppState.getInstance();
         MqttAppState.setApplication(getApplicationContext());

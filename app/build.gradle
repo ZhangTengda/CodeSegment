@@ -52,28 +52,35 @@ dependencies {
     implementation 'com.squareup.okio:okio:1.15.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     // retrofit
-    implementation "io.reactivex.rxjava2:rxjava:2.2.0" // 必要rxjava2依赖
-    implementation "io.reactivex.rxjava2:rxandroid:2.1.0" // 必要rxandrroid依赖，切线程时需要用到
-    implementation 'com.squareup.retrofit2:retrofit:2.5.0' // 必要retrofit依赖
-    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0' // 必要依赖，和Rxjava结合必须用到，下面会提到
-    implementation 'com.squareup.retrofit2:converter-gson:2.3.0' // 必要依赖，解析json字符所用
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1' //非必要依赖， log依赖，如果需要打印OkHttpLog需要添加
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.0'
+    // 必要rxjava2依赖
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    // 必要rxandrroid依赖，切线程时需要用到
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    // 必要retrofit依赖
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    // 必要依赖，和Rxjava结合必须用到，下面会提到
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    // 必要依赖，解析json字符所用
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    //非必要依赖， log依赖，如果需要打印OkHttpLog需要添加
     // guolin 的数据库开源库
     implementation 'org.litepal.android:core:2.0.0'
     // 富文本编译器
     implementation 'jp.wasabeef:richeditor-android:1.2.2'
-
-    implementation ('com.github.sendtion:XRichText:1.8') {
+    implementation('com.github.sendtion:XRichText:1.8') {
         exclude group: 'com.android.support'
         exclude group: 'com.github.bumptech.glide'
     }
-
     implementation 'com.github.mr5:icarus:0.1.14'
     //
     implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.1'
     implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
-
     implementation 'com.google.code.gson:gson:2.8.5'
+    // 日历 demo
+    implementation project(':calendar')
+    // Litepal 数据库
+    implementation 'org.litepal.android:java:3.0.0'
 }
 repositories {
     mavenCentral()

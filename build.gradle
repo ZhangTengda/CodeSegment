@@ -5,6 +5,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral() // litepal 需要加
         maven {
             url "https://repo.eclipse.org/content/repositories/paho-snapshots/"
         }
@@ -22,6 +23,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()  // litepal 需要加
         maven { url "https://jitpack.io" }
         maven {
             url "https://repo.eclipse.org/content/repositories/paho-snapshots/"
