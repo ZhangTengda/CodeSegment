@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.testone.demo.activity.DemoUI;
 import com.testone.demo.activity.EditTextActivity;
 import com.testone.demo.activity.TestActivity;
 import com.testone.demo.activity.TestUrlRequestActivity;
@@ -13,6 +14,7 @@ import com.testone.demo.activity.calendar.CalendarActivity;
 import com.testone.demo.activity.ele.StartSearchActivity;
 import com.testone.demo.activity.filepicker.FilePickerActivity;
 import com.testone.demo.activity.guodu.GuoDuActivity;
+import com.testone.demo.activity.listview.RecyclerViewMoveUI;
 import com.testone.demo.activity.mqtt.LoginChatBoxActivity;
 import com.testone.demo.activity.mqtt.MQTTActivity;
 import com.testone.demo.activity.okuse.OkHttpActivity;
@@ -180,6 +182,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test19).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RecyclerViewMoveUI.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test20).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DemoUI.class);
                 startActivity(intent);
             }
         });

@@ -186,7 +186,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="跳转19"
+            android:text="跳转可拖拽RecyclerView"
             android:textSize="20dp" />
 
         <TextView
@@ -195,7 +195,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="跳转20"
+            android:text="跳转Demo测试"
             android:textSize="20dp" />
 
         <TextView
