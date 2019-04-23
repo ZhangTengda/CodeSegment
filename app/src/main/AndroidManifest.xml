@@ -90,7 +90,8 @@
         <activity android:name=".activity.calendar.CalendarActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".activity.listview.RecyclerViewMoveUI" />
-        <activity android:name=".activity.DemoUI" />
+        <activity android:name=".activity.smiley.DemoUI" />
+        <activity android:name=".activity.smiley.EmojiUI" />
 
         <!-- Mqtt服务 -->
         <service android:name="org.eclipse.paho.android.service.MqttService" />

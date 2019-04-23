@@ -204,7 +204,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="跳转21"
+            android:text="跳转Emoji键盘"
             android:textSize="20dp" />
 
         <TextView

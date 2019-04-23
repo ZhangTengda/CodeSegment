@@ -81,6 +81,7 @@ dependencies {
     implementation project(':calendar')
     // Litepal 数据库
     implementation 'org.litepal.android:java:3.0.0'
+
 }
 repositories {
     mavenCentral()

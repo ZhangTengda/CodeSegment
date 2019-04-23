@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.testone.demo.activity.DemoUI;
+import com.testone.demo.activity.smiley.DemoUI;
 import com.testone.demo.activity.EditTextActivity;
 import com.testone.demo.activity.TestActivity;
 import com.testone.demo.activity.TestUrlRequestActivity;
@@ -27,6 +27,7 @@ import com.testone.demo.activity.listview.ListViewActivity;
 import com.testone.demo.activity.listview.LoadMoreWrapperActivity;
 import com.testone.demo.activity.listview.RecyclerViewActivity;
 import com.testone.demo.activity.database.DataBaseActivity;
+import com.testone.demo.activity.smiley.EmojiUI;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -198,6 +199,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, DemoUI.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test21).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, EmojiUI.class);
                 startActivity(intent);
             }
         });

@@ -14,6 +14,6 @@
     <color name="mx_unselected_gray">#E6F6FF</color>
     <color name="mx_state_pressed_blue">#459BCD</color>
     <color name="mx_vip_contact_view_more_color">#56C2FF</color>
-
+    <color name="mx_label_state_disable_color">#c4c4c4</color>
 
 </resources>

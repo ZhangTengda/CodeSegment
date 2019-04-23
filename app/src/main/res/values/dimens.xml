@@ -3,4 +3,6 @@
 
     <dimen name="middle_textsize">16dip</dimen>
     <dimen name="small_textsize">14dip</dimen>
+    <dimen name="mx_conversation_message_smiley_input_size">25dip</dimen>
+    <dimen name="mx_conversation_message_smiley_size">35dip</dimen>
 </resources>
