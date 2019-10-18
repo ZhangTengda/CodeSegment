@@ -18,5 +18,14 @@
             android:layout_height="31.0dip"
             android:layout_gravity="center"
             android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/art_emoji_icon_iv_del"
+            android:layout_width="30.0dip"
+            android:layout_height="31.0dip"
+            android:alpha="0"
+            android:layout_gravity="center"
+            android:src="@drawable/mx_del_btn"
+            android:scaleType="fitCenter" />
     </FrameLayout>
 </LinearLayout>

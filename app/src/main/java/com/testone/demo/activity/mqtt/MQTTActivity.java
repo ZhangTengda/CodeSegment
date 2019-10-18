@@ -44,7 +44,7 @@ public class MQTTActivity extends BaseActivity implements IGetMessageCallBack {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ToastUtil.shortToast(getApplicationContext(), "测试一下子");
+                ToastUtil.showToast(getApplicationContext(), "测试一下子");
 
                 String imei = MobileInfoUtil.getIMEI(MQTTActivity.this);
                 Log.e(TAG,"imei" + imei);

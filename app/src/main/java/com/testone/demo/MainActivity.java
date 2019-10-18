@@ -6,6 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.testone.demo.activity.BaseRecyclerViewAdapterUI;
+import com.testone.demo.activity.CountDownUI;
+import com.testone.demo.activity.TestRecyclerView;
+import com.testone.demo.activity.ijk.IJKPlayerUI;
 import com.testone.demo.activity.smiley.DemoUI;
 import com.testone.demo.activity.EditTextActivity;
 import com.testone.demo.activity.TestActivity;
@@ -207,6 +211,53 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, EmojiUI.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test22).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, TestRecyclerView.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test23).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CountDownUI.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test24).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, EmulatorUI.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test25).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, BaseRecyclerViewAdapterUI.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.test26).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, BadgeUI.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test27).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, IJKPlayerUI.class);
                 startActivity(intent);
             }
         });

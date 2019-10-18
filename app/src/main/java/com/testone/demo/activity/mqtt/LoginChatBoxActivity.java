@@ -74,7 +74,7 @@ public class LoginChatBoxActivity extends BaseActivity implements View.OnClickLi
                     intent.putExtra("password", loginPwd.getText().toString());
                     startActivity(intent);
                 } else {
-                    ToastUtil.shortToast(this, "帐号或密码错误");
+                    ToastUtil.showToast(this, "帐号或密码错误");
                 }
                 break;
         }

@@ -49,7 +49,7 @@ public class RecyclerViewMoveUI extends BaseActivity {
         recyclerView.addOnItemTouchListener(new OnRecyclerItemClickListener(recyclerView) {
             @Override
             public void onItemClick(RecyclerView.ViewHolder vh) {
-                ToastUtil.shortToast(RecyclerViewMoveUI.this, "点一下");
+                ToastUtil.showToast(RecyclerViewMoveUI.this, "点一下");
             }
 
             @Override

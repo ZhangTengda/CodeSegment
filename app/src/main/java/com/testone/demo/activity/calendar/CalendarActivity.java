@@ -65,7 +65,7 @@ public class CalendarActivity extends BaseActivity {
         SQLiteDatabase database = LitePal.getDatabase();
 
         boolean solartermsbean = tabIsExist(database, "solartermsbean");
-        ToastUtil.longToast(this, "表格已存在" +solartermsbean);
+        ToastUtil.showToast(this, "表格已存在" + solartermsbean);
 
         CreateSolarTermsMsgUtil solarTermsMsgUtil = new CreateSolarTermsMsgUtil();
         if (!solartermsbean) {

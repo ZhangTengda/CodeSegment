@@ -92,6 +92,12 @@
         <activity android:name=".activity.listview.RecyclerViewMoveUI" />
         <activity android:name=".activity.smiley.DemoUI" />
         <activity android:name=".activity.smiley.EmojiUI" />
+        <activity android:name=".activity.TestRecyclerView" />
+        <activity android:name=".activity.CountDownUI" />
+        <activity android:name=".EmulatorUI" />
+        <activity android:name=".activity.BaseRecyclerViewAdapterUI" />
+        <activity android:name=".BadgeUI" />
+        <activity android:name=".activity.ijk.IJKPlayerUI" />
 
         <!-- Mqtt服务 -->
         <service android:name="org.eclipse.paho.android.service.MqttService" />

@@ -2,6 +2,7 @@ package com.testone.demo.adapter;
 
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -29,6 +30,7 @@ public class SmileyAdapter extends PagerAdapter {
 
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+        Log.i("roger", "------- current destory position is " + position);
         container.removeView(pageViews.get(position));
     }
 
@@ -36,6 +38,7 @@ public class SmileyAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
         container.addView(pageViews.get(position));
+        Log.i("roger", "++++++++++ current instantiate position is " + position);
         return pageViews.get(position);
     }
 
