@@ -8,6 +8,8 @@ import android.view.View;
 
 import com.testone.demo.activity.BaseRecyclerViewAdapterUI;
 import com.testone.demo.activity.CountDownUI;
+import com.testone.demo.activity.DialogUI;
+import com.testone.demo.activity.ScreenShotUI;
 import com.testone.demo.activity.TestRecyclerView;
 import com.testone.demo.activity.ijk.IJKPlayerUI;
 import com.testone.demo.activity.smiley.DemoUI;
@@ -258,6 +260,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, IJKPlayerUI.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test28).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DialogUI.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.test29).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ScreenShotUI.class);
                 startActivity(intent);
             }
         });

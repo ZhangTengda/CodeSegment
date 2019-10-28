@@ -31,4 +31,32 @@
         <item name="android:layout_margin">10dp</item>
     </style>
 
+    <!-- 对话框主题简单设置 -->
+    <style name="dialog" parent="Theme.AppCompat.Dialog">
+        <!--边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--背景是否透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--背景颜色-->
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <!--弹出对话框背景是否昏暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--无标题-->
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- 对话框从底部弹出 -->
+    <style name="dialog_from_bottom_anim">
+        <item name="android:windowEnterAnimation">@anim/dialog_from_bottom_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_from_bottom_anim_out</item>
+    </style>
+
+    <!-- 对话框默认动画 -->
+    <style name="dialog_scale_anim">
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_scale_anim_out</item>
+    </style>
+
 </resources>
