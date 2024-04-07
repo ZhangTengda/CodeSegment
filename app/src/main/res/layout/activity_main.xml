@@ -1,53 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context="com.xnjz.one.MainActivity">
 
-    <View
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"/>
-
-    <RelativeLayout
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-        <EditText
-            android:id="@+id/edittext"
-            android:textSize="16dp"
-            android:padding="10dp"
-            android:hint="冻结了时间"
-            android:layout_toLeftOf="@+id/suofang_cancel"
-            android:layout_width="match_parent"
-            android:background="@drawable/bg_semi_circle"
-            android:layout_weight="1"
-            android:layout_marginRight="10dp"
-            android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <TextView
-            android:layout_alignParentRight="true"
-            android:id="@+id/suofang_cancel"
-            android:layout_marginRight="10dp"
-            android:text="取消"
-            android:gravity="center_vertical"
-            android:textSize="16dp"
-            android:textColor="#000000"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="16dp"
+            android:text="播放1"
+            android:textSize="20dp" />
 
-    </RelativeLayout>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="16dp"
+            android:text="播放2"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="16dp"
+            android:text="播放3"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="16dp"
+            android:text="请求4"
+            android:textSize="20dp" />
 
 
-    <TextView
-        android:layout_marginTop="50dp"
-        android:id="@+id/zhibuzhidao"
-        android:text="知不知道"
-        android:textSize="16dp"
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
 
-</LinearLayout>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

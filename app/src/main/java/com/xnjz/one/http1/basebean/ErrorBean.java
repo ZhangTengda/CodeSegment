@@ -1,0 +1,20 @@
+package com.xnjz.one.http1.basebean;
+
+import java.io.Serializable;
+
+public class ErrorBean implements Serializable {
+    private String message;
+
+    public ErrorBean(String message) {
+        this.message = message;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+}
+

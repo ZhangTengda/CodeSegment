@@ -1,112 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.testone.demo">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xnjz.one">
 
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 蓝牙录音使用，不需要可以去除 -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+
+
+    <!-- 必要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 非必要权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
     <application
-        android:name=".MyApplication"
+        android:name=".base.MyApp"
         android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name="com.xnjz.one.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
+        <activity android:name="com.xnjz.one.activity.PermissionActivity" />
+        <activity android:name="com.xnjz.one.activity.TimeChange2Activity" />
 
-
-        <activity
-            android:name=".activity.TestActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-
-        <activity
-            android:name=".activity.guodu.GuoDuActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-
-        <activity
-            android:name=".activity.guodu.Transitions"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-
-
-        <activity
-            android:name=".activity.ele.StartSearchActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity
-            android:name=".activity.ele.SearchContentActivity"
-            android:theme="@style/Theme.Transparent"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-
-        <activity
-            android:name=".activity.share.ShareOneActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-
-        <activity
-            android:name=".activity.share.ShareTwoActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-
-        <activity
-            android:name=".activity.EditTextActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-
-        <activity
-            android:name=".activity.listview.ListViewActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-
-        <activity
-            android:name=".activity.listview.RecyclerViewActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-
-        <activity
-            android:name=".activity.listview.LoadMoreWrapperActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-
-
-        <activity
-            android:name=".activity.keyboard.KeybardActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-
-        <activity android:name=".activity.seekbar.SeekBarKtActivity" />
-        <activity android:name=".activity.TestUrlRequestActivity" />
-        <activity android:name=".activity.database.DataBaseActivity" />
-        <activity android:name=".activity.filepicker.FilePickerActivity" />
-        <activity android:name=".activity.richtext.RichTextActivity" />
-        <activity android:name=".activity.richtext.RichText2Activity" />
-        <activity android:name=".activity.richtext.RichText3Activity" />
-        <activity android:name=".activity.mqtt.MQTTActivity" />
-        <activity android:name=".activity.mqtt.ChatBoxesActivity" />
-        <activity android:name=".activity.mqtt.LoginChatBoxActivity" />
-        <activity android:name=".activity.okuse.OkHttpActivity" />
-        <activity android:name=".activity.calendar.CalendarActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.listview.RecyclerViewMoveUI" />
-        <activity android:name=".activity.smiley.DemoUI" />
-        <activity android:name=".activity.smiley.EmojiUI" />
-        <activity android:name=".activity.TestRecyclerView" />
-        <activity android:name=".activity.CountDownUI" />
-        <activity android:name=".EmulatorUI" />
-        <activity android:name=".activity.BaseRecyclerViewAdapterUI" />
-        <activity android:name=".BadgeUI" />
-        <activity android:name=".activity.ijk.IJKPlayerUI" />
-        <activity android:name=".activity.DialogUI" />
-        <activity android:name=".activity.ScreenShotUI" />
-        <activity android:name=".activity.LargeImageView" />
-
-        <!-- Mqtt服务 -->
-        <service android:name="org.eclipse.paho.android.service.MqttService" />
-        <service android:name=".service.MQTTService" />
-        <service android:name=".chatboxservice.ChatBoxMQTTService" />
-
+        <service android:name=".service.ConnectionServices"/>
     </application>
 
 </manifest>
